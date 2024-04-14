@@ -33,7 +33,7 @@ li{
     list-style:none;
 }
 .logo{
-    height: 9vh;
+    height: 40vh;
 }
 .logo1{
     width: 20vw;
@@ -47,6 +47,10 @@ li{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
 }
 .logo1 h3:hover{    
     font-size: 1.85em;

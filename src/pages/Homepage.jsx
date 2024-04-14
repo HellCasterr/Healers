@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homepage.css'; // Assuming your CSS file is named App.css
+import ContactBtn from '../components/Buttons/ContactBtn';
 
 function Homepage() {
     return (
@@ -44,7 +45,8 @@ function Homepage() {
                     </div> */}
                     </div>
                     <div>
-                        <a href="contactus.html"><button className="logo3">Contact Us</button></a>
+                        
+                        <a href="/contactUs"><ContactBtn/></a>
                     </div>
                 </div>
             </div>
@@ -55,7 +57,7 @@ function Homepage() {
                         <div id="main1A">
                             <div id="mainA">
                                 <p>Treatment with Best <span id="doctor1">Doctors</span></p>
-                                <p id="mainAA">For a better today & tomorrow stay with us.</p>
+                                <p id="mainAA" className='animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-black font-bold'>For a better today & tomorrow stay with us.</p>
                             </div>
                             <div id="mainABB">
                                 <input type="date" name="patientName" id="patientName" className="mainB" />
@@ -71,25 +73,25 @@ function Homepage() {
                             </div>
                         </div>
                         <div>
-                            <img src="images/bg11.png" alt="logo" id="mainimg" />
+                            <img src="images/bg11.png " alt="logo" id="mainimg" className='' />
                         </div>
                     </div>
                     <div id="mainC">
                         {/* More content here */}
-                        <a href="EHR.html">
+                        <a href="/erh">
                             <div className="mainC" id="mainCAA">
                                 <p className="mainCA"></p>
                                 <hr />
                                 <p><h3 className="mainCB">EHR DashBoard</h3></p>
                             </div>
                         </a>
-                        <a href="appointment.html">
+                        <a href="/appointment">
                             <div className="mainC" id="mainCAB">
                                 <p className="mainCA2"></p>
                                 <p><h3 className="mainCB2">Appointment DashBoard</h3></p>
                             </div>
                         </a>
-                        <a href="inventory.html">
+                        <a href="/inventory">
                             <div className="mainC" id="mainCAC">
                                 <p className="mainCA"></p>
                                 <hr />

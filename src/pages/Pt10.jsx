@@ -1,8 +1,8 @@
-import  { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you'll use React Router
 import './pt1.css';
 
-function Pt1() {
+function Pt10() {
   const [activeTab, setActiveTab] = useState('medical'); // State to manage tabs
   const medicalRef = useRef(null); // Refs to target elements for scrolling behavior
   const testRef = useRef(null);
@@ -97,4 +97,4 @@ function Pt1() {
   );
 }
 
-export default Pt1;
+export default Pt10;

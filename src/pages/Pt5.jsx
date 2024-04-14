@@ -1,8 +1,8 @@
-import  { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you'll use React Router
 import './pt1.css';
 
-function Pt1() {
+function Pt5() {
   const [activeTab, setActiveTab] = useState('medical'); // State to manage tabs
   const medicalRef = useRef(null); // Refs to target elements for scrolling behavior
   const testRef = useRef(null);
@@ -46,7 +46,7 @@ function Pt1() {
           <div className="profile-details">
             <h2 style={{ textAlign: 'center' }}>Patient Details</h2>
             <hr style={{ width: '85%', margin: '20px' }} />
-            <p><strong>Name:</strong> Arjun Sharma</p>
+            <p><strong>Name:</strong> Aryan Kapoor</p>
             <p><strong>Age:</strong> 35</p>
             <p><strong>Gender:</strong> Male</p>
             <p><strong>Location:</strong> Chandigarh</p>
@@ -97,4 +97,4 @@ function Pt1() {
   );
 }
 
-export default Pt1;
+export default Pt5;

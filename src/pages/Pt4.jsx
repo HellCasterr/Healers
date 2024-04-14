@@ -1,8 +1,8 @@
-import  { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you'll use React Router
 import './pt1.css';
 
-function Pt1() {
+function Pt4() {
   const [activeTab, setActiveTab] = useState('medical'); // State to manage tabs
   const medicalRef = useRef(null); // Refs to target elements for scrolling behavior
   const testRef = useRef(null);
@@ -41,14 +41,14 @@ function Pt1() {
       <div className="container">
         <div className="profile-container">
           <div className="profile-photo">
-            <img src="images/profile1.jpeg" alt="Patient Photo" />
+            <img src="/images/profile3.jpeg" alt="Patient Photo" />
           </div>
           <div className="profile-details">
             <h2 style={{ textAlign: 'center' }}>Patient Details</h2>
             <hr style={{ width: '85%', margin: '20px' }} />
-            <p><strong>Name:</strong> Arjun Sharma</p>
+            <p><strong>Name:</strong> Sanya Mirza</p>
             <p><strong>Age:</strong> 35</p>
-            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Gender:</strong> Female</p>
             <p><strong>Location:</strong> Chandigarh</p>
             <hr style={{ width: '85%', margin: '20px' }} />
             <p><strong>Blood-Group: </strong> A+</p>
@@ -97,4 +97,4 @@ function Pt1() {
   );
 }
 
-export default Pt1;
+export default Pt4;

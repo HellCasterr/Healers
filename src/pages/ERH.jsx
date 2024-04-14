@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ERH.css';
+import Loader from '../components/Loader';
 
 
 function Erh() {
+
+    const [loading, setLoading] = useState(false);
+
+    const handleClick = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+            // Navigate to the next page here
+        }, 10000); // Change this to the number of seconds you want
+    }
+
     return (
         <>
 
+
+           
+
+{loading && <Loader />}
+            
             <div className="header">
 
                 <div className='nav-div'> 
@@ -29,7 +46,7 @@ function Erh() {
                     <form className="form">
                         <button>
                             <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" stroke-linejoin="round"></path>
+                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round"></path>
                             </svg>
                         </button>
                         <input className="input" placeholder="Search by Id" required="" type="text"/>
@@ -63,70 +80,70 @@ function Erh() {
                                         <td className="pId">122451</td>
                                         <td className="pName">Arjun Sharma</td>
                                         <td className="pBtn">
-                                            <a href="pt1.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt1"><button className="button2" onClick={handleClick} >View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122452</td>
                                         <td className="pName">Rajat Jain</td>
                                         <td className="pBtn">
-                                            <a href="pt2.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt2"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122453</td>
                                         <td className="pName">Priya Gupta</td>
                                         <td className="pBtn">
-                                            <a href="pt3.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt3"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122454</td>
                                         <td className="pName">Aishwarya Rai</td>
                                         <td className="pBtn">
-                                            <a href="pt4.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt4"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122455</td>
                                         <td className="pName">Sanya Mirja</td>
                                         <td className="pBtn">
-                                            <a href="pt5.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt5"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122456</td>
                                         <td className="pName">Aryan Kapoor</td>
                                         <td className="pBtn">
-                                            <a href="pt6.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt6"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122457</td>
                                         <td className="pName">Ananya Panday</td>
                                         <td className="pBtn">
-                                            <a href="pt7.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt7"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122458</td>
                                         <td className="pName">Vikram Betaal</td>
                                         <td className="pBtn">
-                                            <a href="pt8.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt8"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122459</td>
                                         <td className="pName">Rohit Sharma</td>
                                         <td className="pBtn">
-                                            <a href="pt9.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt9"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="pId">122460</td>
                                         <td className="pName">Meera Bai</td>
                                         <td className="pBtn">
-                                            <a href="pt10.html"><button className="button2">View Details</button></a>
+                                            <a href="/pt10"><button className="button2">View Details</button></a>
                                         </td>
                                     </tr>
                                 </tbody>

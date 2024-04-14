@@ -1,8 +1,8 @@
-import  { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you'll use React Router
 import './pt1.css';
 
-function Pt1() {
+function Pt2() {
   const [activeTab, setActiveTab] = useState('medical'); // State to manage tabs
   const medicalRef = useRef(null); // Refs to target elements for scrolling behavior
   const testRef = useRef(null);
@@ -18,6 +18,7 @@ function Pt1() {
     }
   };
 
+  
   return (
     <div>
       <div className="header">
@@ -41,12 +42,12 @@ function Pt1() {
       <div className="container">
         <div className="profile-container">
           <div className="profile-photo">
-            <img src="images/profile1.jpeg" alt="Patient Photo" />
+            <img src="images/profile2.jpeg" alt="Patient Photo" />
           </div>
           <div className="profile-details">
             <h2 style={{ textAlign: 'center' }}>Patient Details</h2>
             <hr style={{ width: '85%', margin: '20px' }} />
-            <p><strong>Name:</strong> Arjun Sharma</p>
+            <p><strong>Name:</strong> Rajat Jain</p>
             <p><strong>Age:</strong> 35</p>
             <p><strong>Gender:</strong> Male</p>
             <p><strong>Location:</strong> Chandigarh</p>
@@ -64,7 +65,7 @@ function Pt1() {
               id="tab1"
               onClick={() => handleTabClick('medical')}
             >
-              <img className="reportimg" src="images/medical_report.png" alt="report" />
+              <img className="reportimg" src="/images/medical_report.png" alt="report" />
             </button>
             <h2 style={{ textAlign: 'center', marginTop: '15px' }}>Medical History</h2>
             <div ref={medicalRef} id="content1" className={`tab-content ${activeTab === 'medical' ? 'active' : ''}`}>
@@ -97,4 +98,4 @@ function Pt1() {
   );
 }
 
-export default Pt1;
+export default Pt2;
