@@ -203,7 +203,7 @@ li{
     transition: all 0.1s linear;
 }
 .mainC:hover{
-    border: 1px solid rgb(77, 255, 216);
+    border: 2px solid rgb(77, 255, 216);
     box-shadow: 1px 1px 2px black;
     width: 20.3vw;
     height: 50.3vh;
@@ -231,7 +231,7 @@ li{
 }
 #mainimg{
     
-    height: 50vh;
+    height: 45vh;
     width: 25vw;
     margin-right: 20px;
 }

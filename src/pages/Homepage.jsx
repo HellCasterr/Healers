@@ -22,7 +22,7 @@ function Homepage() {
 
 
                 
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center m-8'>
                     <div className="logo1">
                         <img src="/images/medical-logo.png" alt="logo" className="logo" loading="lazy" />
                         <h3>HEALERS</h3>

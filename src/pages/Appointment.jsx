@@ -1,5 +1,6 @@
 import React from 'react';
 import './Appointment.css';
+import ContactBtn from '../components/Buttons/ContactBtn';
 
 
 
@@ -9,22 +10,37 @@ function Appointment(){
         
         
         <div className="header">
-        <div>
-            <nav>
-                <div className="logo1">
-                    <img src="/images/medical-logo.png" alt="logo" className="logo" loading="lazy"/>
-                    <h3 className='text-3xl'>HEALERS</h3>
+        
+        <div className='flex justify-between items-center m-8'>
+                    <div className="logo1">
+                        <img src="/images/medical-logo.png" alt="logo" className="logo" loading="lazy" />
+                        <h3>HEALERS</h3>
+                    </div>
+                    <div className="navCon ">
+                        <div className='flex gap-10 justify-between items-center text-xl'>
+                            <a href="/"><p className='transition duration-2000 hover:scale-110 hover:'>Home</p></a>
+                            <a href="#aboutus"><p className='transition duration-2000 hover:scale-110'>About Us</p></a>
+                            <a href="/erh"><p className='transition duration-2000 hover:scale-110'>EHR DashBoard</p></a>
+                            <a href="/appointment"><p className='transition duration-2000 hover:scale-110'>Appointment DashBoard</p></a>
+                            <a href="/inventory"><p className='transition duration-2000 hover:scale-110'>Inventory</p></a>
+                        </div>
+
+                    {/* <div className="logo2 ">
+                        <a href="/"><span>Home</span></a>
+                        <a href="#aboutus"><span>About Us</span></a>
+                        <a href="/erh"><span>EHR DashBoard</span></a>
+                        <a href="/appointment"><span>Appointment DashBoard</span></a>
+                        <a href="/inventory"><span>Inventory</span></a>
+                    </div> */}
+                    </div>
+                    <div>
+                        
+                        <a href="/contactUs"><ContactBtn/></a>
+                    </div>
                 </div>
-                <div className="logo2 flex items-center justify-center gap-20">
-                    <a href="/homepage"><span>Home</span></a>
-                    <a href="/homepage"><span>About Us</span></a>
-                    <a href="/dashboard"><span>EH-Dashboard</span></a>
-                </div>
-                <div>
-                    <a href="contactus.html"><button className="logo3">Contact Us</button></a>
-                </div>
-            </nav>
-        </div>
+
+
+
         <div className="searchBarA">
             <div className="input-group mb-3 flex w-full">
                 <input id="SearchBar" type="text" className="form-control " placeholder="Search Record"

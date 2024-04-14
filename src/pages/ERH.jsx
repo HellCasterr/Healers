@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ERH.css';
 import Loader from '../components/Loader';
+import ContactBtn from '../components/Buttons/ContactBtn';
 
 
 function Erh() {
@@ -25,21 +26,41 @@ function Erh() {
             
             <div className="header">
 
-                <div className='nav-div'> 
-                        <div className="logo1 ">
-                            <img src="/public/images/medical-logo.png" alt="logo" className="logo" loading="lazy"/>
-                                <h3>HEALERS</h3>
-                        </div>
-                    <nav >
-                        <div className="logo2">
-                            <a href="index.html"><span>Home</span></a>
-                            <a href="index.html"><span>About Us</span></a>
-                            <a href="contactus.html"><span>Contact Us</span></a>
-                        </div>
-                    </nav>
-                </div>
-                <div>
-                    <h1>Electronic Health Record Dashboard</h1>
+            <div>
+
+
+
+                
+<div className='flex justify-between items-center m-8'>
+    <div className="logo1">
+        <img src="/images/medical-logo.png" alt="logo" className="logo" loading="lazy" />
+        <h3>HEALERS</h3>
+    </div>
+    <div className="navCon ">
+        <div className='flex gap-10 justify-between items-center text-xl'>
+            <a href="/"><p className='transition duration-2000 hover:scale-110 hover:'>Home</p></a>
+            <a href="#aboutus"><p className='transition duration-2000 hover:scale-110'>About Us</p></a>
+            <a href="/erh"><p className='transition duration-2000 hover:scale-110'>EHR DashBoard</p></a>
+            <a href="/appointment"><p className='transition duration-2000 hover:scale-110'>Appointment DashBoard</p></a>
+            <a href="/inventory"><p className='transition duration-2000 hover:scale-110'>Inventory</p></a>
+        </div>
+
+    {/* <div className="logo2 ">
+        <a href="/"><span>Home</span></a>
+        <a href="#aboutus"><span>About Us</span></a>
+        <a href="/erh"><span>EHR DashBoard</span></a>
+        <a href="/appointment"><span>Appointment DashBoard</span></a>
+        <a href="/inventory"><span>Inventory</span></a>
+    </div> */}
+    </div>
+    <div>
+        
+        <a href="/contactUs"><ContactBtn/></a>
+    </div>
+</div>
+</div>
+                <div className='flex items-center justify-center '>
+                    <h1 className='text-2xl w-full'>Electronic Health Record Dashboard</h1>
                     
                 </div>
                 <div id="formdiv">
