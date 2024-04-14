@@ -33,7 +33,17 @@ li{
     list-style:none;
 }
 .logo{
-    height: 40vh;
+    height: 10vh;
+    
+}
+.hero-img{
+    
+    
+
+    
+    color: white;
+    
+
 }
 .logo1{
     width: 20vw;
@@ -193,11 +203,16 @@ li{
     transition: all 0.1s linear;
 }
 .mainC:hover{
-    border: 1px solid rgb(226, 226, 226);
+    border: 1px solid rgb(77, 255, 216);
     box-shadow: 1px 1px 2px black;
     width: 20.3vw;
     height: 50.3vh;
+    border-radius: 20px;
     background-color: rgb(250, 253, 255);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .mainCA{
     height: 75%;
@@ -215,8 +230,10 @@ li{
     margin-top: 30px;
 }
 #mainimg{
-    width: 30vw;
-    margin-bottom: 60px;
+    
+    height: 50vh;
+    width: 25vw;
+    margin-right: 20px;
 }
 #aboutus{
     display: flex;
@@ -233,7 +250,7 @@ li{
     text-shadow: 1px 1px 2px rgba(171, 167, 167, 0.914);
 }
 #aboutus div img{
-    width: auto;
+    width: 40vh;
     height: 25vh;
 }
 .footerA{

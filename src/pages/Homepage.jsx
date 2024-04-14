@@ -52,12 +52,12 @@ function Homepage() {
             </div>
             <div className="bodyA">
                 <main>
-                    <div className="main1">
+                    <div className="main1 w-full flex justify-between">
                         {/* Your main content here */}
                         <div id="main1A">
                             <div id="mainA">
-                                <p>Treatment with Best <span id="doctor1">Doctors</span></p>
-                                <p id="mainAA" className='animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-black font-bold'>For a better today & tomorrow stay with us.</p>
+                                <p className='-mx-16'>Treatment with Best <span id="doctor1">Doctors</span></p>
+                                <p id="mainAA" className='-mx-16 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-black font-bold'>For a better today & tomorrow stay with us.</p>
                             </div>
                             <div id="mainABB">
                                 <input type="date" name="patientName" id="patientName" className="mainB" />
@@ -72,8 +72,8 @@ function Homepage() {
                                 <button className="mainBA" onClick="alert('Successfully Booked')">Book Appointment</button>
                             </div>
                         </div>
-                        <div>
-                            <img src="images/bg11.png " alt="logo" id="mainimg" className='' />
+                        <div className='-mx-24 w-full h-screen flex items-center '>
+                            <img src="images/bg11.png " alt="logo" id="mainimg" className='absolute hero-img' />
                         </div>
                     </div>
                     <div id="mainC">
